@@ -11,7 +11,7 @@ async function getWidget() {
         return
     }
     for (let page of Object.keys(res.data.data)) {
-        const filename = `page1/${page}.ts`
+        const filename = `src/page/${page}.ts`
         let data:string
         data = `module.exports = ${JSON.stringify(res['data']['data'][page],null,"\t")}`
         fs.writeFileSync(filename,data)

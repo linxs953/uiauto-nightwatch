@@ -1,0 +1,34 @@
+{
+    "sceneName": "login_test",
+    "dataId": "鉴定成功",
+    "steps": [
+        {
+            "stepNo": "1",
+            "stepName": "bs_login",
+            "stepCnName": "登录",
+            "pageName": "登录页",
+            "pageUrl": "https://dev.chexinhui.com/dsspbs/#/login",
+            "pageKey": "bs_login",
+            "navigate": true,
+            "actions": [
+                {
+                    "target": "username",
+                    "operation": "sendKey",
+                    "value": "username",
+                    "wait": "5000"
+                },
+                {
+                    "target": "password",
+                    "operation": "sendKey",
+                    "value": "password",
+                    "wait": "5000"
+                },
+                {
+                    "target": "submitBtn",
+                    "operation": "click",
+                    "wait": "5000"
+                }
+            ]
+        }
+    ]
+}

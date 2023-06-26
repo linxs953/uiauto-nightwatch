@@ -2,6 +2,9 @@
 
 export async function multDataRunner(scene:any,dp:Promise<any>,allScene:any={}) {
     const data = await dp
+    if (!data || data.length === 0) {
+        throw new Error("get data null")
+    }
     for (let idx=0; idx < data.length;idx++) {
         const keys = Object.keys(scene)
         for (let k of keys) {

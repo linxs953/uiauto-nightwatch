@@ -5,8 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "npx nightwatch",
-    "data": "npx ts-node data.tss",
-    "page": "npx ts-node page.ts"
+    "data": "npx ts-node ./fetch/data.ts",
+    "page": "npx ts-node ./fetch/page.ts",
+    "case": "npx ts-node ./gen/index.ts"
   },
   "keywords": [],
   "author": "",
